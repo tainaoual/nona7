@@ -21,7 +21,7 @@ public class AutoGradingAcceptanceTests {
         underTest = new FizzBuzzQix();
     }
 
-    @DisplayName("Acceptance tests for We Can Code IT's Fizz Buzz Qiz exercise.")
+    @DisplayName("Acceptance tests for We Can Code IT's FizzBuzzQiz exercise.")
     @Test
     public void acceptanceTests() {
         assertAll(
