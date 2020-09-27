@@ -21,23 +21,28 @@ public class FizzBuzzQixTest {
         String spokenWord = underTest.interpret(3);
         assertThat(spokenWord).isEqualTo("Fizz");
     }
+
     @Test
     public void multipleOfFiveShouldReturnBuzz() {
         FizzBuzzQix underTest = new FizzBuzzQix();
         String spokenWord = underTest.interpret(5);
         assertThat(spokenWord).isEqualTo("Buzz");
     }
+
     @Test
     public void multipleOfSevenShouldReturnQix() {
         FizzBuzzQix underTest = new FizzBuzzQix();
         String spokenWord = underTest.interpret(7);
         assertThat(spokenWord).isEqualTo("Qix");
     }
+
     @Test
     public void multipleOfWordsAddShouldReturninorderFizzBzzQix() {
         FizzBuzzQix underTest = new FizzBuzzQix();
         String spokenWord = underTest.interpret(105);
         assertThat(spokenWord).isEqualTo("FizzBuzzQix");
     }
-
 }
+
+
+
