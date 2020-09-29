@@ -17,8 +17,14 @@ public class FizzBuzzQix {
 
         String result = "";
 
-        if( (numberToInterpret % nFizz == 0) && (numberToInterpret % nBuzz == 0) && (numberToInterpret % nQix == 0) ){ //if FizzBuzzQix
+        if( (numberToInterpret % nFizz == 0) && (numberToInterpret % nBuzz == 0) && (numberToInterpret % nQix == 0) ) { //if FizzBuzzQix
             result = FIZZ + BUZZ + QIX;
+        }else if ( (numberToInterpret % nFizz == 0) && (numberToInterpret % nBuzz == 0)) {
+            result = FIZZ + BUZZ;
+        }else if((numberToInterpret % nBuzz == 0) && (numberToInterpret % nQix == 0)) {
+            result = BUZZ + QIX;
+        }else if ((numberToInterpret % nFizz == 0)&&(numberToInterpret % nQix == 0)){
+            result = FIZZ+QIX ;
 
         }else if(numberToInterpret % nFizz == 0) { //if Fizz
             result = FIZZ;
